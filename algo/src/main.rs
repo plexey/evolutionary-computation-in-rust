@@ -55,11 +55,10 @@ fn find_fittest_path(dots: &Vec<Dot>) -> Vec<Point> {
 }
 
 fn main() {
-    let foo = std::fs::remove_file("../data/paths.txt");
+    let remove_file_result = std::fs::remove_file("../data/paths.txt");
 
-    if foo.is_err() {
+    if remove_file_result.is_err() {
         println!("File does not exist!");
-        // panic!("foo");
     }
 
     let mut file = OpenOptions::new()
