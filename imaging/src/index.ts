@@ -7,7 +7,7 @@ import fsPromises from "fs/promises";
 type CTX = NodeCanvasRenderingContext2D;
 
 const BACKGROUND_FILL = "hsl(220, 50%, 8%)";
-const START_FILL = "hsla(0, 0%, 0%, 1)";
+const START_FILL = "hsla(200, 100%, 50%, 1)";
 const END_FILL = "hsla(0, 100%, 50%, 1)";
 
 const getCanvas = (width: number, height: number): Canvas => {
